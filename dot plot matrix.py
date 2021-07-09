@@ -27,8 +27,20 @@ def CreateMatrix(seq_a, seq_b):
     print("\n")
 
 
-    # itertaing on the 2 sequences 
-    for indexa in range(0, N):
+    #for different sizes DNAs
+    X = N
+    s = "-"
+    if (N > M):
+        for i in range(0, N - M):
+            seq_b += s
+        X = N
+    elif (M > N):
+        for i in range(0, M - N):
+            seq_a += s
+        X = M
+        
+    # itertaing on the 2 sequences with window   
+    for indexa in range(0, X):
         a = seq_a[indexa]
         for indexb in range(0, M):
             b=seq_b[indexb]
