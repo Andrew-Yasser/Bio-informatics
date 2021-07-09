@@ -27,7 +27,7 @@ def CreateMatrix(seq_a, seq_b):
     print("\n")
 
 
-    # itertaing on the 2 sequences with window
+    # itertaing on the 2 sequences 
     for indexa in range(0, N):
         a = seq_a[indexa]
         for indexb in range(0, M):
